@@ -42,5 +42,11 @@
   "merge_tada": {
     "completed": false,
     "current_challenge": false
+  },
+  "local_repo": {
+    "path": ""
+  },
+  "fork_repo": {
+    "path": ""
   }
 }
