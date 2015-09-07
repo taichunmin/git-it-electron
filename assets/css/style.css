@@ -606,3 +606,7 @@ button.light-blue:hover {
 .grey-border {
   border: 1px solid #818181
 }
+
+.sk-spinner-pulse {
+  margin: 40px 12px;
+}
