@@ -28,3 +28,8 @@ node_modules
 
 # Packaged Builds
 out/
+
+# File which generate by compiled should be ignored
+challenges
+challenges-ja
+challenges-zhtw
