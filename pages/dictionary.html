@@ -14,7 +14,7 @@
   <div class="lang-select">
     <select id="lang-select" class="btn-outline lang-select">
       <option value="">English</option>
-      <option value="zhtw">正體中文</option>
+      <option value="zhtw">繁體中文</option>
       <option value="ja">日本語</option>
     </select>
   </div>
@@ -43,9 +43,9 @@
 <div class="blue-border-box">
   <ul class="no-list-style">
     <li><strong>Make a new folder (aka make directory)</strong></li>
-    <code class="shell">mkdir &#60;FOLDERNAME&#62;</code>
+    <code class="shell">mkdir <FOLDERNAME></code>
     <li><strong>Navigate into an existing folder (aka change directory)</strong></li>
-    <code class="shell">cd &#60;FOLDERNAME&#62;</code>
+    <code class="shell">cd <FOLDERNAME></code>
     <li><strong>List the items in a folder</strong></li>
     <code class="shell">ls </code>
   </ul>
@@ -75,13 +75,13 @@
     <li><strong>View changes to files</strong></li>
     <code class="shell">git diff</code>
     <li><strong>Add a file's changes to be committed</strong></li>
-    <code class="shell">git add &#60;FILENAME&#62;</code>
+    <code class="shell">git add <FILENAME></code>
     <li><strong>To add all files changes</strong></li>
     <code class="shell">git add .</code>
     <li><strong>To commit (aka save) the changes you've added with a short message describing the changes</strong></li>
   <code class="shell">git commit -m "your commit message"</code>
     <li><strong>Copy a repository to your computer</strong></li>
-    <code class="shell">git clone &#60;URL&#62;</code>
+    <code class="shell">git clone <URL></code>
   </ul>
 </div>
 
@@ -89,15 +89,15 @@
 <div class="blue-border-box">
   <ul class="no-list-style">
     <li><strong>Create a new branch</strong></li>
-    <code class="shell">git branch &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git branch <BRANCHNAME></code>
     <li><strong>Move onto a branch</strong></li>
-    <code class="shell">git checkout &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git checkout <BRANCHNAME></code>
     <li><strong>You can create and switch to a branch in one line</strong></li>
-    <code class="shell">git checkout -b &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git checkout -b <BRANCHNAME></code>
     <li><strong>List the branches</strong></li>
     <code class="shell">git branch</code>
     <li><strong>Rename a branch you're currently on</strong></li>
-    <code class="shell">git branch -m &#60;NEWBRANCHNAME&#62;</code>
+    <code class="shell">git branch -m <NEWBRANCHNAME></code>
   </ul>
 </div>
 
@@ -105,9 +105,9 @@
 <div class="blue-border-box">
   <ul class="no-list-style">
     <li><strong>Add remote connections</strong></li>
-    <code class="shell">git remote add &#60;REMOTENAME&#62; &#60;URL&#62;</code>
+    <code class="shell">git remote add <REMOTENAME> <URL></code>
     <li><strong>Set a URL to a remote</strong></li>
-    <code class="shell">git remote set-url &#60;REMOTENAME&#62; &#60;URL&#62;</code>
+    <code class="shell">git remote set-url <REMOTENAME> <URL></code>
     <li><strong>View remote connections</strong></li>
     <code class="shell">git remote -v</code>
   </ul>
@@ -119,7 +119,7 @@
     <li><strong>Pull in changes</strong></li>
     <code class="shell">git pull</code>
     <li><strong>Pull in changes from a remote branch</strong></li>
-    <code class="shell">git pull &#60;REMOTENAME&#62; &#60;REMOTEBRANCH&#62;</code>
+    <code class="shell">git pull <REMOTENAME> <REMOTEBRANCH></code>
     <li><strong>See changes to the remote before you pull in</strong></li>
     <code class="shell">git fetch --dry-run</code>
   </ul>
@@ -129,9 +129,9 @@
 <div class="blue-border-box">
   <ul class="no-list-style">
     <li><strong>Push changes</strong></li>
-    <code class="shell">git push &#60;REMOTENAME&#62; &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git push <REMOTENAME> <BRANCHNAME></code>
     <li><strong>Merge a branch into current branch</strong></li>
-    <code class="shell">git merge &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git merge <BRANCHNAME></code>
   </ul>
 </div>
 
@@ -139,9 +139,9 @@
 <div class="blue-border-box">
   <ul class="no-list-style">
     <li><strong>Delete a local branch</strong></li>
-    <code class="shell">git branch -D &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git branch -D <BRANCHNAME></code>
     <li><strong>Delete a remote branch</strong></li>
-    <code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code>
+    <code class="shell">git push <REMOTENAME> --delete <BRANCHNAME></code>
   </ul>
 </div>
 

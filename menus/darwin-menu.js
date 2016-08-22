@@ -123,7 +123,7 @@ module.exports = function menu (app, mainWindow) {
           }
         },
         {
-          label: '正體中文',
+          label: '繁體中文',
           click: function (item, focusedWindow) {
             if (focusedWindow) {
               var goToPath
