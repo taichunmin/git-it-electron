@@ -30,6 +30,6 @@ node_modules
 out/
 
 # File which generate by compiled should be ignored
-challenges
-challenges-ja
-challenges-zhtw
+challenges/*.html
+challenges-ja/*.html
+challenges-zhtw/*.html
