@@ -31,6 +31,7 @@ app.on('ready', function appReady () {
   var appPath = app.getPath('userData')
   var userDataPath = path.join(appPath, 'user-data.json')
   var userSavedDir = path.join(appPath, 'saved-dir.json')
+  var language = app.getLocale()
 
   // tools for development to prefill challenge completion
   // usage: electron . --none
@@ -55,8 +56,15 @@ app.on('ready', function appReady () {
       })
     }
   })
-
-  mainWindow.loadURL('file://' + __dirname + '/index.html')
+  var locale = '';
+  if (language == 'zh-TW') {
+    locale = '-zhtw'
+  } else if (language == 'ja-JP') {
+    locale = '-ja'
+  } else {
+    locale = ''
+  }
+  mainWindow.loadURL('file://' + __dirname + '/index' + locale + '.html')
 
   ipcMain.on('getUserDataPath', function (event) {
     event.returnValue = userDataPath
