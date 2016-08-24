@@ -102,7 +102,7 @@ app.on('ready', function appReady() {
         menu = Menu.buildFromTemplate(darwinTemplate(app, mainWindow));
         Menu.setApplicationMenu(menu)
     } else {
-        menu = Menu.buildFromTemplate(otherTemplate(mainWindow));
+        menu = Menu.buildFromTemplate(otherTemplate(app, mainWindow));
         mainWindow.setMenu(menu)
     }
 
@@ -113,7 +113,7 @@ app.on('ready', function appReady() {
 
 function setAllChallengesComplete(path) {
     var challenges = JSON.parse(fs.readFileSync(path))
-    for (var key of challenges) {
+    for (var key in challenges) {
         challenges[key].completed = true
     }
     fs.writeFileSync(path, JSON.stringify(challenges), '', null)
@@ -121,7 +121,7 @@ function setAllChallengesComplete(path) {
 
 function setAllChallengesUncomplete(path) {
     var challenges = JSON.parse(fs.readFileSync(path))
-    for (var key of challenges) {
+    for (var key in challenges) {
         challenges[key].completed = false
     }
     fs.writeFileSync(path, JSON.stringify(challenges), '', null)
@@ -130,7 +130,7 @@ function setAllChallengesUncomplete(path) {
 function setSomeChallengesComplete(path) {
     var counter = 0;
     var challenges = JSON.parse(fs.readFileSync(path));
-    for (var key of challenges) {
+    for (var key in challenges) {
         counter++;
         challenges[key].completed = counter < 6;
     }
