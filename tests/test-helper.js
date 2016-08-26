@@ -9,6 +9,6 @@ function makeDirectory () {
 
 }
 
-exec('git init', {cwd: tmpDir}, function initalized (err, stderr, stdout) {
+exec('git init', { cwd: tmpDir }, function initalized (err, stderr, stdout) {
   if (err) return console.log(err)
 })
